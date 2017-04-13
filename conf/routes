@@ -2,23 +2,7 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-GET         /                           controllers.AdminController.index
-GET         /admin/blank                controllers.AdminController.blank
-GET         /admin/buttons              controllers.AdminController.buttons
-GET         /admin/flot                 controllers.AdminController.flot
-GET         /admin/forms                controllers.AdminController.forms
-GET         /admin/grid                 controllers.AdminController.grid
-GET         /admin/icons                controllers.AdminController.icons
-GET         /admin                      controllers.AdminController.index
 GET         /admin/login                controllers.AdminController.login
-GET         /admin/morris               controllers.AdminController.morris
-GET         /admin/notifications        controllers.AdminController.notifications
-GET         /admin/panels_wells         controllers.AdminController.panels_wells
-GET         /admin/tables               controllers.AdminController.tables
-GET         /admin/typography           controllers.AdminController.typography
-
-
-
 
 # Map static resources from the /public folder to the /assets URL path
 GET         /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
